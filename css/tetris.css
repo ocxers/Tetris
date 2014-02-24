@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #EEEEEE;
+}
+
+.map {
+  border: 30px solid #999999;
+  width: 371px;
+  height: 558px;
+  background-color: #000000;
+}
+
+.map .ulc {
+  margin: 0;
+  padding: 0;
+}
+
+.map .ulc li {
+  margin: 0;
+  padding: 0;
+  height: 30px;
+  list-style: none;
+}
+
+.map .ulc li:not(:last-child) {
+  margin-bottom: 1px;
+}
+
+.map .ulc li span {
+  display: block;
+  float: left;
+  width: 30px;
+  height: 30px;
+}
+
+.map .ulc li span:not(:last-child) {
+  margin-right: 1px;
+}
+
+#nextblock ul {
+  margin: 0;
+  padding: 0;
+}
+
+#nextblock ul li {
+  margin: 0;
+  padding: 0;
+  height: 30px;
+  list-style: none;
+}
+
+#nextblock ul li:not(:last-child) {
+  margin-bottom: 1px;
+}
+
+#nextblock ul li span {
+  display: block;
+  float: left;
+  width: 30px;
+  height: 30px;
+}
+
+#nextblock ul li span:not(:last-child) {
+  margin-right: 1px;
+}
+
+.color-0 {
+  background-color: red;
+}
+
+.color-1 {
+  background-color: orange;
+}
+
+.color-2 {
+  background-color: yellow;
+}
+
+.color-3 {
+  background-color: green;
+}
+
+.color-4 {
+  background-color: blue;
+}
+
+.color-5 {
+  background-color: indigo;
+}
+
+.color-6 {
+  background-color: purple;
+}
+
+.go {
+  z-index: 99998;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.2);
+  display: none;
+}
+.go .over {
+  z-index: 99999;
+  position: absolute;
+  border: 1px solid lightgray;
+  left: 50%;
+  top: 50%;
+  width: 300px;
+  height: 200px;
+  margin-left: -150px;
+  margin-top: -100px;
+  background-color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+.go .over .title {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 100px;
+  color: red;
+}
+.go .over #result {
+  font-size: 30px;
+}
+.go .over button {
+  margin-top: 20px;
+  cursor: pointer;
+}
+.opration {
+  position: absolute;
+  left: 500px;
+}
