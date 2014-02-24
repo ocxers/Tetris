@@ -178,6 +178,8 @@ $(function () {
 
       // 新游戏
       that.newGame.on('click', function () {
+        that.newGame.blur();
+
         that.UnBindEvents();
 
         that.speed = that.oSpeed;
@@ -200,6 +202,7 @@ $(function () {
       });
 
       that.start.on('click', function () {
+        that.start.blur();
         if ($(this).html() == 'Start') {
           $(this).html('Pause');
           that.StartTimer();
